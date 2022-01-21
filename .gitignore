@@ -1,6 +1,10 @@
+# project
 .python-version
 db.sqlite3
 geckodriver.log
-
 virtualenv/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
