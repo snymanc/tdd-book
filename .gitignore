@@ -5,6 +5,7 @@ db.sqlite3
 geckodriver.log
 virtualenv/
 .vscode/
+/static
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
