@@ -1,0 +1,8 @@
+ [live]
+ superlist.claysnyman.co.za ansible_become=yes ansible_ssh_user=clay
+
+ [staging]
+ superlist-staging.claysnyman.co.za ansible_become=yes ansible_ssh_user=clay
+ 
+ [staging]
+ localhost ansible_ssh_user=thegeneral ansible_ssh_port=6666 ansible_host=127.0.0.1
