@@ -1,3 +1,4 @@
+import os
 from django.contrib import auth, messages
 from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
@@ -15,7 +16,7 @@ def send_login_email(request):
     send_mail(
         'Your login link for Superlists',
         message_body,
-        'edith.tdd@yahoo.com',
+        os.environ.get('EMAIL_SENDER'),
         [email],
     )
     messages.success(
