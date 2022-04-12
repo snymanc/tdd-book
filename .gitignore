@@ -12,3 +12,4 @@ virtualenv/
 __pycache__/
 *.py[cod]
 *$py.class
+functional_tests/screendumps
