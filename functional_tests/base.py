@@ -25,7 +25,11 @@ def wait(fn):
 class FunctionalTest(StaticLiveServerTestCase):
 
     def setUp(self):
-        self.browser = webdriver.Safari()
+        if os.environ.get('PYENV_ROOT'):
+            self.browser = webdriver.Safari()
+        else:
+            self.browser = webdriver.Firefox()
+            
         self.staging_server = os.environ.get('STAGING_SERVER')
         if self.staging_server:
             self.live_server_url = 'http://' + self.staging_server
