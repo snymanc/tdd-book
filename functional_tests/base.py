@@ -29,6 +29,7 @@ def wait(fn):
 class FunctionalTest(StaticLiveServerTestCase):
 
     def setUp(self):
+        # check local
         if os.environ.get('PYENV_ROOT'):
             self.browser = webdriver.Safari()
         else:
